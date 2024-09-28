@@ -1,0 +1,9 @@
+CREATE DATABASE Company;
+USE Company;
+CREATE TABLE employee (
+id_employee INT AUTO_INCREMENT PRIMARY KEY,
+name  VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+email VARCHAR(100) NOT NULL,
+employmentdate DATE NOT NULL);
+
