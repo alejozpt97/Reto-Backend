@@ -28,6 +28,11 @@ public class EmployeeController {
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+    // obtener un empleado
+    @GetMapping("/employees/{id_employee}")
+    public Optional<Employee> getOneEmployees (@PathVariable long id_employee) {
+        return employeeRepository.findById(id_employee);
+    }
 
     // Crear un nuevo empleado
    @PostMapping("/employees")
